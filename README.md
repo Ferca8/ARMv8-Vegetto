@@ -28,12 +28,12 @@ Para poder compilar y ejecutar el proyecto, es necesario tener instaladas las si
 Para compilar el laboratorio, tipear las siguientes sentencias en la línea de comandos:
 ```sh
 git clone https://github.com/Ferca8/ARMv8-Vegetto.git
-cd odc2024-g35
+cd ARMv8-Vegetto
 ``` 
 
 ## Ejercicio 1: Imagen estática
 El código genera una ilustración estática con estilo pixel art de Vegetto, un personaje de la saga Dragon Ball. Se recrea al personaje en una posición previa a combatir, inmerso en un escenario genérico de la serie.  
-Para observar tal imagen, una vez dentro del directorio `odc2024-g35`, moverse al directorio de la consigna utilizando:
+Para observar tal imagen, una vez dentro del directorio `ARMv8-Vegetto`, moverse al directorio de la consigna utilizando:
 ```sh
 cd ejercicio1
 make runQEMU
@@ -46,15 +46,15 @@ make clean
 ## Ejercicio 2: Animación interactiva con GPIO
 Se mantuvo el mismo diseño empleado en el ejercicio 1 con ligeras modificaciones. Destaca la incorporación de un aura animada alrededor del personaje, la cual simula el aumento de su poder, y el uso de GPIO siendo útiles las teclas ``A``,``S`` y ``D``. Estas teclas permiten alternar entre las distintas transformaciones del personaje:  
 
-- **Estado base**, pulsando la tecla ``A``  
-- **Super Saiyajin**, pulsando la tecla ``S``  
-- **Super Saiyajin Blue**, pulsando la tecla ``D``  
+- **Estado base**, pulsando la tecla ``A``.  
+- **Super Saiyajin**, pulsando la tecla ``S``.  
+- **Super Saiyajin Blue**, pulsando la tecla ``D``.  
 
 Si se presiona alguna de las teclas y se la suelta al instante, la animación del aura será breve.  
 Si se mantiene presionada alguna de las teclas, la animación del aura persistirá hasta que se decida soltarla.  
 Cabe mencionar que ambos elementos están conectados: al momento de interactuar con las teclas tanto el aura como el personaje se verán afectados, cambiando el color de ciertos aspectos como el cabello, ojos, cejas y el mismo halo de luz que lo rodea.  
 
-Para poder observar la animación e interactuar con ella, debe moverse al directorio de la consigna desde `odc2024-g35` utilizando:  
+Para poder observar la animación e interactuar con ella, debe moverse al directorio de la consigna desde `ARMv8-Vegetto` utilizando:  
 ```sh
 cd ejercicio2
 make runQEMU
